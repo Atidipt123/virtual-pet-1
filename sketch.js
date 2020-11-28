@@ -13,7 +13,7 @@ function setup() {
   createCanvas(500, 500);
   dog = createSprite(250 , 250 , 50 , 50)
   dog.addImage(dogI)
-  dog.scale(0.5)
+  dog.scale = 0.5
   database = firebase.database()
   foodStock = database.ref('Food')
   foodStock.on("value" , readStock);
